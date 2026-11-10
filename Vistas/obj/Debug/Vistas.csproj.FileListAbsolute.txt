@@ -10,3 +10,5 @@ C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.csproj.CoreCom
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.csproj.Up2Date
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.exe
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.pdb
+C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.exe.config
+C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Login.resources
