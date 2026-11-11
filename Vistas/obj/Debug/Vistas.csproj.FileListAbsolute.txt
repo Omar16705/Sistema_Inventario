@@ -12,3 +12,4 @@ C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.exe
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.pdb
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.exe.config
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_dashboard_inventario.resources

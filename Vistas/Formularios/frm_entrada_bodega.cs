@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Vistas.Formularios.Productos
+namespace Vistas.Formularios
 {
-    public partial class frm_nuevo_producto : Form
+    public partial class frm_entrada_bodega : Form
     {
-        public frm_nuevo_producto()
+        public frm_entrada_bodega()
         {
             InitializeComponent();
         }

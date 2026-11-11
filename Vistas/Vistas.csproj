@@ -52,11 +52,17 @@
     <Compile Include="Formularios\frm_dashboard_inventario.Designer.cs">
       <DependentUpon>frm_dashboard_inventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Productos\frm_nuevo_producto.cs">
+    <Compile Include="Formularios\frm_entrada_bodega.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Productos\frm_nuevo_producto.Designer.cs">
-      <DependentUpon>frm_nuevo_producto.cs</DependentUpon>
+    <Compile Include="Formularios\frm_entrada_bodega.Designer.cs">
+      <DependentUpon>frm_entrada_bodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_salida_bodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_salida_bodega.Designer.cs">
+      <DependentUpon>frm_salida_bodega.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -69,8 +75,11 @@
     <EmbeddedResource Include="Formularios\frm_dashboard_inventario.resx">
       <DependentUpon>frm_dashboard_inventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Productos\frm_nuevo_producto.resx">
-      <DependentUpon>frm_nuevo_producto.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frm_entrada_bodega.resx">
+      <DependentUpon>frm_entrada_bodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_salida_bodega.resx">
+      <DependentUpon>frm_salida_bodega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -1,0 +1,272 @@
+﻿namespace Vistas.Formularios
+{
+    partial class frm_entrada_bodega
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.dgvVerEntrada = new System.Windows.Forms.DataGridView();
+            this.pnlDatos = new System.Windows.Forms.Panel();
+            this.lblIngresarDatosEntrada = new System.Windows.Forms.Label();
+            this.lblFechaEntrada = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblUMedida = new System.Windows.Forms.Label();
+            this.lblNombreProducto = new System.Windows.Forms.Label();
+            this.lblVencimiento = new System.Windows.Forms.Label();
+            this.lblBodega = new System.Windows.Forms.Label();
+            this.lblRefrigeradora = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btnAgregarEntrada = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVerEntrada)).BeginInit();
+            this.pnlDatos.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dgvVerEntrada
+            // 
+            this.dgvVerEntrada.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvVerEntrada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVerEntrada.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgvVerEntrada.Location = new System.Drawing.Point(322, 0);
+            this.dgvVerEntrada.Name = "dgvVerEntrada";
+            this.dgvVerEntrada.Size = new System.Drawing.Size(367, 483);
+            this.dgvVerEntrada.TabIndex = 0;
+            // 
+            // pnlDatos
+            // 
+            this.pnlDatos.BackColor = System.Drawing.Color.SeaGreen;
+            this.pnlDatos.Controls.Add(this.btnAgregarEntrada);
+            this.pnlDatos.Controls.Add(this.textBox7);
+            this.pnlDatos.Controls.Add(this.textBox6);
+            this.pnlDatos.Controls.Add(this.textBox5);
+            this.pnlDatos.Controls.Add(this.textBox4);
+            this.pnlDatos.Controls.Add(this.textBox3);
+            this.pnlDatos.Controls.Add(this.textBox2);
+            this.pnlDatos.Controls.Add(this.textBox1);
+            this.pnlDatos.Controls.Add(this.lblRefrigeradora);
+            this.pnlDatos.Controls.Add(this.lblBodega);
+            this.pnlDatos.Controls.Add(this.lblVencimiento);
+            this.pnlDatos.Controls.Add(this.lblNombreProducto);
+            this.pnlDatos.Controls.Add(this.lblUMedida);
+            this.pnlDatos.Controls.Add(this.lblCantidad);
+            this.pnlDatos.Controls.Add(this.lblFechaEntrada);
+            this.pnlDatos.Controls.Add(this.lblIngresarDatosEntrada);
+            this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlDatos.Location = new System.Drawing.Point(0, 0);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(325, 483);
+            this.pnlDatos.TabIndex = 1;
+            // 
+            // lblIngresarDatosEntrada
+            // 
+            this.lblIngresarDatosEntrada.AutoSize = true;
+            this.lblIngresarDatosEntrada.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresarDatosEntrada.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblIngresarDatosEntrada.Location = new System.Drawing.Point(73, 23);
+            this.lblIngresarDatosEntrada.Name = "lblIngresarDatosEntrada";
+            this.lblIngresarDatosEntrada.Size = new System.Drawing.Size(160, 19);
+            this.lblIngresarDatosEntrada.TabIndex = 0;
+            this.lblIngresarDatosEntrada.Text = "Entrada de Bodega";
+            // 
+            // lblFechaEntrada
+            // 
+            this.lblFechaEntrada.AutoSize = true;
+            this.lblFechaEntrada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaEntrada.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblFechaEntrada.Location = new System.Drawing.Point(23, 77);
+            this.lblFechaEntrada.Name = "lblFechaEntrada";
+            this.lblFechaEntrada.Size = new System.Drawing.Size(47, 17);
+            this.lblFechaEntrada.TabIndex = 1;
+            this.lblFechaEntrada.Text = "Fecha";
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblCantidad.Location = new System.Drawing.Point(23, 110);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(71, 17);
+            this.lblCantidad.TabIndex = 2;
+            this.lblCantidad.Text = "Cantidad";
+            // 
+            // lblUMedida
+            // 
+            this.lblUMedida.AutoSize = true;
+            this.lblUMedida.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUMedida.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblUMedida.Location = new System.Drawing.Point(23, 142);
+            this.lblUMedida.Name = "lblUMedida";
+            this.lblUMedida.Size = new System.Drawing.Size(128, 17);
+            this.lblUMedida.TabIndex = 3;
+            this.lblUMedida.Text = "Unidad de Medida";
+            // 
+            // lblNombreProducto
+            // 
+            this.lblNombreProducto.AutoSize = true;
+            this.lblNombreProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreProducto.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNombreProducto.Location = new System.Drawing.Point(23, 174);
+            this.lblNombreProducto.Name = "lblNombreProducto";
+            this.lblNombreProducto.Size = new System.Drawing.Size(149, 17);
+            this.lblNombreProducto.TabIndex = 4;
+            this.lblNombreProducto.Text = "Nombre del Producto";
+            // 
+            // lblVencimiento
+            // 
+            this.lblVencimiento.AutoSize = true;
+            this.lblVencimiento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVencimiento.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblVencimiento.Location = new System.Drawing.Point(23, 204);
+            this.lblVencimiento.Name = "lblVencimiento";
+            this.lblVencimiento.Size = new System.Drawing.Size(90, 17);
+            this.lblVencimiento.TabIndex = 5;
+            this.lblVencimiento.Text = "Vencimiento";
+            // 
+            // lblBodega
+            // 
+            this.lblBodega.AutoSize = true;
+            this.lblBodega.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBodega.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblBodega.Location = new System.Drawing.Point(23, 234);
+            this.lblBodega.Name = "lblBodega";
+            this.lblBodega.Size = new System.Drawing.Size(59, 17);
+            this.lblBodega.TabIndex = 6;
+            this.lblBodega.Text = "Bodega";
+            // 
+            // lblRefrigeradora
+            // 
+            this.lblRefrigeradora.AutoSize = true;
+            this.lblRefrigeradora.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRefrigeradora.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblRefrigeradora.Location = new System.Drawing.Point(23, 276);
+            this.lblRefrigeradora.Name = "lblRefrigeradora";
+            this.lblRefrigeradora.Size = new System.Drawing.Size(96, 17);
+            this.lblRefrigeradora.TabIndex = 7;
+            this.lblRefrigeradora.Text = "Refrigeradora";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(112, 77);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(166, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(100, 234);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(178, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(140, 204);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(138, 20);
+            this.textBox3.TabIndex = 10;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(125, 273);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(153, 20);
+            this.textBox4.TabIndex = 11;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(178, 173);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 12;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(157, 141);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(121, 20);
+            this.textBox6.TabIndex = 13;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(112, 110);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(166, 20);
+            this.textBox7.TabIndex = 14;
+            // 
+            // btnAgregarEntrada
+            // 
+            this.btnAgregarEntrada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEntrada.Location = new System.Drawing.Point(26, 343);
+            this.btnAgregarEntrada.Name = "btnAgregarEntrada";
+            this.btnAgregarEntrada.Size = new System.Drawing.Size(125, 52);
+            this.btnAgregarEntrada.TabIndex = 15;
+            this.btnAgregarEntrada.Text = "Agregar Entrada";
+            this.btnAgregarEntrada.UseVisualStyleBackColor = true;
+            // 
+            // frm_entrada_bodega
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(689, 483);
+            this.Controls.Add(this.pnlDatos);
+            this.Controls.Add(this.dgvVerEntrada);
+            this.Name = "frm_entrada_bodega";
+            this.Text = "frm_entrada_bodega";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVerEntrada)).EndInit();
+            this.pnlDatos.ResumeLayout(false);
+            this.pnlDatos.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView dgvVerEntrada;
+        private System.Windows.Forms.Panel pnlDatos;
+        private System.Windows.Forms.Label lblBodega;
+        private System.Windows.Forms.Label lblVencimiento;
+        private System.Windows.Forms.Label lblNombreProducto;
+        private System.Windows.Forms.Label lblUMedida;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lblFechaEntrada;
+        private System.Windows.Forms.Label lblIngresarDatosEntrada;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblRefrigeradora;
+        private System.Windows.Forms.Button btnAgregarEntrada;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+    }
+}
