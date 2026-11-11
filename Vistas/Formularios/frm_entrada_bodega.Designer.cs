@@ -30,22 +30,22 @@
         {
             this.dgvVerEntrada = new System.Windows.Forms.DataGridView();
             this.pnlDatos = new System.Windows.Forms.Panel();
-            this.lblIngresarDatosEntrada = new System.Windows.Forms.Label();
-            this.lblFechaEntrada = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.lblUMedida = new System.Windows.Forms.Label();
-            this.lblNombreProducto = new System.Windows.Forms.Label();
-            this.lblVencimiento = new System.Windows.Forms.Label();
-            this.lblBodega = new System.Windows.Forms.Label();
-            this.lblRefrigeradora = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.btnAgregarEntrada = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblRefrigeradora = new System.Windows.Forms.Label();
+            this.lblBodega = new System.Windows.Forms.Label();
+            this.lblVencimiento = new System.Windows.Forms.Label();
+            this.lblNombreProducto = new System.Windows.Forms.Label();
+            this.lblUMedida = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblFechaEntrada = new System.Windows.Forms.Label();
+            this.lblIngresarDatosEntrada = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVerEntrada)).BeginInit();
             this.pnlDatos.SuspendLayout();
             this.SuspendLayout();
@@ -85,82 +85,64 @@
             this.pnlDatos.Size = new System.Drawing.Size(325, 483);
             this.pnlDatos.TabIndex = 1;
             // 
-            // lblIngresarDatosEntrada
+            // btnAgregarEntrada
             // 
-            this.lblIngresarDatosEntrada.AutoSize = true;
-            this.lblIngresarDatosEntrada.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngresarDatosEntrada.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblIngresarDatosEntrada.Location = new System.Drawing.Point(73, 23);
-            this.lblIngresarDatosEntrada.Name = "lblIngresarDatosEntrada";
-            this.lblIngresarDatosEntrada.Size = new System.Drawing.Size(160, 19);
-            this.lblIngresarDatosEntrada.TabIndex = 0;
-            this.lblIngresarDatosEntrada.Text = "Entrada de Bodega";
+            this.btnAgregarEntrada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEntrada.Location = new System.Drawing.Point(26, 324);
+            this.btnAgregarEntrada.Name = "btnAgregarEntrada";
+            this.btnAgregarEntrada.Size = new System.Drawing.Size(125, 52);
+            this.btnAgregarEntrada.TabIndex = 15;
+            this.btnAgregarEntrada.Text = "Agregar Entrada";
+            this.btnAgregarEntrada.UseVisualStyleBackColor = true;
             // 
-            // lblFechaEntrada
+            // textBox7
             // 
-            this.lblFechaEntrada.AutoSize = true;
-            this.lblFechaEntrada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaEntrada.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblFechaEntrada.Location = new System.Drawing.Point(23, 77);
-            this.lblFechaEntrada.Name = "lblFechaEntrada";
-            this.lblFechaEntrada.Size = new System.Drawing.Size(47, 17);
-            this.lblFechaEntrada.TabIndex = 1;
-            this.lblFechaEntrada.Text = "Fecha";
+            this.textBox7.Location = new System.Drawing.Point(112, 110);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(166, 20);
+            this.textBox7.TabIndex = 14;
             // 
-            // lblCantidad
+            // textBox6
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblCantidad.Location = new System.Drawing.Point(23, 110);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(71, 17);
-            this.lblCantidad.TabIndex = 2;
-            this.lblCantidad.Text = "Cantidad";
+            this.textBox6.Location = new System.Drawing.Point(157, 141);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(121, 20);
+            this.textBox6.TabIndex = 13;
             // 
-            // lblUMedida
+            // textBox5
             // 
-            this.lblUMedida.AutoSize = true;
-            this.lblUMedida.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUMedida.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblUMedida.Location = new System.Drawing.Point(23, 142);
-            this.lblUMedida.Name = "lblUMedida";
-            this.lblUMedida.Size = new System.Drawing.Size(128, 17);
-            this.lblUMedida.TabIndex = 3;
-            this.lblUMedida.Text = "Unidad de Medida";
+            this.textBox5.Location = new System.Drawing.Point(178, 173);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 12;
             // 
-            // lblNombreProducto
+            // textBox4
             // 
-            this.lblNombreProducto.AutoSize = true;
-            this.lblNombreProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreProducto.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNombreProducto.Location = new System.Drawing.Point(23, 174);
-            this.lblNombreProducto.Name = "lblNombreProducto";
-            this.lblNombreProducto.Size = new System.Drawing.Size(149, 17);
-            this.lblNombreProducto.TabIndex = 4;
-            this.lblNombreProducto.Text = "Nombre del Producto";
+            this.textBox4.Location = new System.Drawing.Point(125, 273);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(153, 20);
+            this.textBox4.TabIndex = 11;
             // 
-            // lblVencimiento
+            // textBox3
             // 
-            this.lblVencimiento.AutoSize = true;
-            this.lblVencimiento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVencimiento.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblVencimiento.Location = new System.Drawing.Point(23, 204);
-            this.lblVencimiento.Name = "lblVencimiento";
-            this.lblVencimiento.Size = new System.Drawing.Size(90, 17);
-            this.lblVencimiento.TabIndex = 5;
-            this.lblVencimiento.Text = "Vencimiento";
+            this.textBox3.Location = new System.Drawing.Point(140, 204);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(138, 20);
+            this.textBox3.TabIndex = 10;
             // 
-            // lblBodega
+            // textBox2
             // 
-            this.lblBodega.AutoSize = true;
-            this.lblBodega.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBodega.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblBodega.Location = new System.Drawing.Point(23, 234);
-            this.lblBodega.Name = "lblBodega";
-            this.lblBodega.Size = new System.Drawing.Size(59, 17);
-            this.lblBodega.TabIndex = 6;
-            this.lblBodega.Text = "Bodega";
+            this.textBox2.Location = new System.Drawing.Point(100, 234);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(178, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(112, 77);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(166, 20);
+            this.textBox1.TabIndex = 8;
             // 
             // lblRefrigeradora
             // 
@@ -173,64 +155,82 @@
             this.lblRefrigeradora.TabIndex = 7;
             this.lblRefrigeradora.Text = "Refrigeradora";
             // 
-            // textBox1
+            // lblBodega
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 8;
+            this.lblBodega.AutoSize = true;
+            this.lblBodega.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBodega.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblBodega.Location = new System.Drawing.Point(23, 234);
+            this.lblBodega.Name = "lblBodega";
+            this.lblBodega.Size = new System.Drawing.Size(59, 17);
+            this.lblBodega.TabIndex = 6;
+            this.lblBodega.Text = "Bodega";
             // 
-            // textBox2
+            // lblVencimiento
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 234);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
-            this.textBox2.TabIndex = 9;
+            this.lblVencimiento.AutoSize = true;
+            this.lblVencimiento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVencimiento.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblVencimiento.Location = new System.Drawing.Point(23, 204);
+            this.lblVencimiento.Name = "lblVencimiento";
+            this.lblVencimiento.Size = new System.Drawing.Size(90, 17);
+            this.lblVencimiento.TabIndex = 5;
+            this.lblVencimiento.Text = "Vencimiento";
             // 
-            // textBox3
+            // lblNombreProducto
             // 
-            this.textBox3.Location = new System.Drawing.Point(140, 204);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 20);
-            this.textBox3.TabIndex = 10;
+            this.lblNombreProducto.AutoSize = true;
+            this.lblNombreProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreProducto.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNombreProducto.Location = new System.Drawing.Point(23, 174);
+            this.lblNombreProducto.Name = "lblNombreProducto";
+            this.lblNombreProducto.Size = new System.Drawing.Size(149, 17);
+            this.lblNombreProducto.TabIndex = 4;
+            this.lblNombreProducto.Text = "Nombre del Producto";
             // 
-            // textBox4
+            // lblUMedida
             // 
-            this.textBox4.Location = new System.Drawing.Point(125, 273);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 20);
-            this.textBox4.TabIndex = 11;
+            this.lblUMedida.AutoSize = true;
+            this.lblUMedida.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUMedida.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblUMedida.Location = new System.Drawing.Point(23, 142);
+            this.lblUMedida.Name = "lblUMedida";
+            this.lblUMedida.Size = new System.Drawing.Size(128, 17);
+            this.lblUMedida.TabIndex = 3;
+            this.lblUMedida.Text = "Unidad de Medida";
             // 
-            // textBox5
+            // lblCantidad
             // 
-            this.textBox5.Location = new System.Drawing.Point(178, 173);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblCantidad.Location = new System.Drawing.Point(23, 110);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(71, 17);
+            this.lblCantidad.TabIndex = 2;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // textBox6
+            // lblFechaEntrada
             // 
-            this.textBox6.Location = new System.Drawing.Point(157, 141);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 20);
-            this.textBox6.TabIndex = 13;
+            this.lblFechaEntrada.AutoSize = true;
+            this.lblFechaEntrada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaEntrada.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblFechaEntrada.Location = new System.Drawing.Point(23, 77);
+            this.lblFechaEntrada.Name = "lblFechaEntrada";
+            this.lblFechaEntrada.Size = new System.Drawing.Size(47, 17);
+            this.lblFechaEntrada.TabIndex = 1;
+            this.lblFechaEntrada.Text = "Fecha";
             // 
-            // textBox7
+            // lblIngresarDatosEntrada
             // 
-            this.textBox7.Location = new System.Drawing.Point(112, 110);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(166, 20);
-            this.textBox7.TabIndex = 14;
-            // 
-            // btnAgregarEntrada
-            // 
-            this.btnAgregarEntrada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEntrada.Location = new System.Drawing.Point(26, 343);
-            this.btnAgregarEntrada.Name = "btnAgregarEntrada";
-            this.btnAgregarEntrada.Size = new System.Drawing.Size(125, 52);
-            this.btnAgregarEntrada.TabIndex = 15;
-            this.btnAgregarEntrada.Text = "Agregar Entrada";
-            this.btnAgregarEntrada.UseVisualStyleBackColor = true;
+            this.lblIngresarDatosEntrada.AutoSize = true;
+            this.lblIngresarDatosEntrada.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresarDatosEntrada.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblIngresarDatosEntrada.Location = new System.Drawing.Point(73, 23);
+            this.lblIngresarDatosEntrada.Name = "lblIngresarDatosEntrada";
+            this.lblIngresarDatosEntrada.Size = new System.Drawing.Size(160, 19);
+            this.lblIngresarDatosEntrada.TabIndex = 0;
+            this.lblIngresarDatosEntrada.Text = "Entrada de Bodega";
             // 
             // frm_entrada_bodega
             // 

@@ -48,5 +48,27 @@ namespace Vistas.Formularios
         }
 
         #endregion
+
+        private void btnEntradaBodega_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new frm_entrada_bodega());
+        }
+
+        private void btnSalidaBodega_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new frm_salida_bodega());
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult opcionSeleccionada = MessageBox.Show("¿Quieres salir?", "Cerrando Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcionSeleccionada == DialogResult.Yes)
+            {
+                this.Close(); // Cerramos el dashboard
+                frm_login.InstanciaLogin.Show();// Mostramos el login original por q si xdddd
+
+            }
+        }
     }
 }

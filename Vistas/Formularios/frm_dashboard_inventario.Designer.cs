@@ -28,18 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_dashboard_inventario));
             this.pnlOpciones = new System.Windows.Forms.Panel();
-            this.pnlCentral = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEntradaBodega = new System.Windows.Forms.Button();
-            this.btnSalidaBodega = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnSalidaBodega = new System.Windows.Forms.Button();
+            this.btnEntradaBodega = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlCentral = new System.Windows.Forms.Panel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.lblUsuario = new System.Windows.Forms.ToolStripLabel();
+            this.lblRol = new System.Windows.Forms.ToolStripLabel();
             this.pnlOpciones.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlCentral.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlOpciones
             // 
             this.pnlOpciones.BackColor = System.Drawing.Color.SeaGreen;
+            this.pnlOpciones.Controls.Add(this.btnBuscar);
             this.pnlOpciones.Controls.Add(this.btnSalir);
             this.pnlOpciones.Controls.Add(this.btnSalidaBodega);
             this.pnlOpciones.Controls.Add(this.btnEntradaBodega);
@@ -50,49 +61,19 @@
             this.pnlOpciones.Size = new System.Drawing.Size(199, 524);
             this.pnlOpciones.TabIndex = 0;
             // 
-            // pnlCentral
+            // btnBuscar
             // 
-            this.pnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCentral.Location = new System.Drawing.Point(199, 0);
-            this.pnlCentral.Name = "pnlCentral";
-            this.pnlCentral.Size = new System.Drawing.Size(706, 524);
-            this.pnlCentral.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(199, 131);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnEntradaBodega
-            // 
-            this.btnEntradaBodega.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEntradaBodega.FlatAppearance.BorderSize = 0;
-            this.btnEntradaBodega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntradaBodega.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntradaBodega.ForeColor = System.Drawing.Color.Snow;
-            this.btnEntradaBodega.Location = new System.Drawing.Point(0, 131);
-            this.btnEntradaBodega.Name = "btnEntradaBodega";
-            this.btnEntradaBodega.Size = new System.Drawing.Size(199, 71);
-            this.btnEntradaBodega.TabIndex = 1;
-            this.btnEntradaBodega.Text = "Entrada de Bodega";
-            this.btnEntradaBodega.UseVisualStyleBackColor = true;
-            // 
-            // btnSalidaBodega
-            // 
-            this.btnSalidaBodega.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSalidaBodega.FlatAppearance.BorderSize = 0;
-            this.btnSalidaBodega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalidaBodega.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalidaBodega.ForeColor = System.Drawing.Color.Snow;
-            this.btnSalidaBodega.Location = new System.Drawing.Point(0, 202);
-            this.btnSalidaBodega.Name = "btnSalidaBodega";
-            this.btnSalidaBodega.Size = new System.Drawing.Size(199, 71);
-            this.btnSalidaBodega.TabIndex = 2;
-            this.btnSalidaBodega.Text = "Salida de Bodega";
-            this.btnSalidaBodega.UseVisualStyleBackColor = true;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Snow;
+            this.btnBuscar.Location = new System.Drawing.Point(0, 304);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(199, 71);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar Datos";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
@@ -107,6 +88,89 @@
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnSalidaBodega
+            // 
+            this.btnSalidaBodega.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalidaBodega.FlatAppearance.BorderSize = 0;
+            this.btnSalidaBodega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalidaBodega.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalidaBodega.ForeColor = System.Drawing.Color.Snow;
+            this.btnSalidaBodega.Location = new System.Drawing.Point(0, 233);
+            this.btnSalidaBodega.Name = "btnSalidaBodega";
+            this.btnSalidaBodega.Size = new System.Drawing.Size(199, 71);
+            this.btnSalidaBodega.TabIndex = 2;
+            this.btnSalidaBodega.Text = "Salida de Bodega";
+            this.btnSalidaBodega.UseVisualStyleBackColor = true;
+            this.btnSalidaBodega.Click += new System.EventHandler(this.btnSalidaBodega_Click);
+            // 
+            // btnEntradaBodega
+            // 
+            this.btnEntradaBodega.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEntradaBodega.FlatAppearance.BorderSize = 0;
+            this.btnEntradaBodega.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntradaBodega.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntradaBodega.ForeColor = System.Drawing.Color.Snow;
+            this.btnEntradaBodega.Location = new System.Drawing.Point(0, 162);
+            this.btnEntradaBodega.Name = "btnEntradaBodega";
+            this.btnEntradaBodega.Size = new System.Drawing.Size(199, 71);
+            this.btnEntradaBodega.TabIndex = 1;
+            this.btnEntradaBodega.Text = "Entrada de Bodega";
+            this.btnEntradaBodega.UseVisualStyleBackColor = true;
+            this.btnEntradaBodega.Click += new System.EventHandler(this.btnEntradaBodega_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(199, 162);
+            this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Vistas.Properties.Resources.images__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(199, 162);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pnlCentral
+            // 
+            this.pnlCentral.Controls.Add(this.toolStrip1);
+            this.pnlCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCentral.Location = new System.Drawing.Point(199, 0);
+            this.pnlCentral.Name = "pnlCentral";
+            this.pnlCentral.Size = new System.Drawing.Size(706, 524);
+            this.pnlCentral.TabIndex = 1;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblUsuario,
+            this.lblRol});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 499);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(706, 25);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(10, 22);
+            this.lblUsuario.Text = ".";
+            // 
+            // lblRol
+            // 
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(10, 22);
+            this.lblRol.Text = ".";
             // 
             // frm_dashboard_inventario
             // 
@@ -115,10 +179,18 @@
             this.ClientSize = new System.Drawing.Size(905, 524);
             this.Controls.Add(this.pnlCentral);
             this.Controls.Add(this.pnlOpciones);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_dashboard_inventario";
-            this.Text = "dashboard_inventario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sistema de Inventario Comedor Mamá Margarita";
             this.Load += new System.EventHandler(this.frm_dashboard_inventario_Load);
             this.pnlOpciones.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlCentral.ResumeLayout(false);
+            this.pnlCentral.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -131,5 +203,10 @@
         private System.Windows.Forms.Button btnEntradaBodega;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripLabel lblUsuario;
+        private System.Windows.Forms.ToolStripLabel lblRol;
     }
 }

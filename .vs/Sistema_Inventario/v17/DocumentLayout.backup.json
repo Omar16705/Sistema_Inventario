@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\formularios\\frm_salida_bodega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frm_salida_bodega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\formularios\\frm_dashboard_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frm_dashboard_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9B446A38-0703-46FC-B396-B516D81767A2}|Modelos\\Modelos.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\modelos\\bd\\conexion_bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B446A38-0703-46FC-B396-B516D81767A2}|Modelos\\Modelos.csproj|solutionrelative:modelos\\bd\\conexion_bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B446A38-0703-46FC-B396-B516D81767A2}|Modelos\\Modelos.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\modelos\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B446A38-0703-46FC-B396-B516D81767A2}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\formularios\\frm_entrada_bodega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frm_entrada_bodega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\formularios\\frm_restablecer_clave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frm_restablecer_clave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|c:\\users\\omara\\desktop\\sistema_inventario\\vistas\\formularios\\frm_dashboard_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{42E3151D-6033-455A-9804-71A0D0BD8DAC}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frm_dashboard_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,63 +43,89 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Modelos\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "Modelos\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Modelos\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "Modelos\\Entidades\\Usuario.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:43:18.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\frm_login.cs",
+              "RelativeDocumentMoniker": "Vistas\\frm_login.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\frm_login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\frm_login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:40:22.185Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frm_restablecer_clave.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_restablecer_clave.cs",
+              "RelativeDocumentMoniker": "Vistas\\Formularios\\frm_restablecer_clave.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_restablecer_clave.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Formularios\\frm_restablecer_clave.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T17:09:38.775Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_login.cs",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\frm_login.cs",
+              "RelativeDocumentMoniker": "Vistas\\frm_login.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\frm_login.cs",
+              "RelativeToolTip": "Vistas\\frm_login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:51:31.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "conexion_bd.cs",
+              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Modelos\\BD\\conexion_bd.cs",
+              "RelativeDocumentMoniker": "Modelos\\BD\\conexion_bd.cs",
+              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Modelos\\BD\\conexion_bd.cs",
+              "RelativeToolTip": "Modelos\\BD\\conexion_bd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:47:22.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frm_entrada_bodega.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_entrada_bodega.cs",
               "RelativeDocumentMoniker": "Vistas\\Formularios\\frm_entrada_bodega.cs",
               "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_entrada_bodega.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vistas\\Formularios\\frm_entrada_bodega.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T14:51:24.544Z",
+              "WhenOpened": "2026-11-11T17:09:40.092Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Login.cs",
-              "RelativeDocumentMoniker": "Vistas\\Login.cs",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Login.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T14:47:18.635Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "frm_dashboard_inventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_dashboard_inventario.cs",
               "RelativeDocumentMoniker": "Vistas\\Formularios\\frm_dashboard_inventario.cs",
               "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_dashboard_inventario.cs [Dise\u00F1o]",
               "RelativeToolTip": "Vistas\\Formularios\\frm_dashboard_inventario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T14:41:22.096Z",
+              "WhenOpened": "2026-11-11T16:31:09.01Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frm_salida_bodega.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_salida_bodega.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frm_salida_bodega.cs",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Formularios\\frm_salida_bodega.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Formularios\\frm_salida_bodega.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T14:51:42.55Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Login.cs",
-              "RelativeDocumentMoniker": "Vistas\\Login.cs",
-              "ToolTip": "C:\\Users\\omara\\Desktop\\Sistema_Inventario\\Vistas\\Login.cs",
-              "RelativeToolTip": "Vistas\\Login.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAwwB8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T14:53:12.523Z",
-              "EditorCaption": ""
             }
           ]
         }
