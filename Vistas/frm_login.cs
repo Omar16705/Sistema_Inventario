@@ -139,5 +139,10 @@ namespace Vistas
             // 2. Vuelve a la imagen del ojo cerrado
             pcOjoOcultar.Image = Properties.Resources.ojocerrado;
         }
+
+        private void pcOjoOcultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

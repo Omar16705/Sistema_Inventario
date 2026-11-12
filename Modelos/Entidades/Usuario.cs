@@ -18,13 +18,6 @@ namespace Modelos.Entidades
         private String contraseña;
         private String rol;
 
-        //public Usuario(string nombre_usuario, string contraseña)
-        //{
-        //    this.nombre_usuario = nombre_usuario;
-        //    this.contraseña = contraseña;
-            
-        //}
-
         public string Nombre_usuario { get => nombre_usuario; set => nombre_usuario = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public string Rol { get => rol; set => rol = value; }
@@ -91,6 +84,33 @@ namespace Modelos.Entidades
             }
         }
 
+        public bool actualizar_contraseña(string nuevaContraseña, string nombreUsuario)
+        {
+            try
+            {
+                SqlConnection connection = conexion_bd.conectar();
+                connection.Open();
+                string consulta = @"UPDATE Usuario SET clave = @nuevaContraseña WHERE nombre_usuario = @user";
+                SqlCommand comando = new SqlCommand(consulta, connection);
+                comando.Parameters.Add("@nuevaContraseña", SqlDbType.VarChar, 100).Value = BCrypt.Net.BCrypt.HashPassword(nuevaContraseña);
+                comando.Parameters.Add("@user", SqlDbType.VarChar, 100).Value = Nombre_usuario;
+                int filasAfectadas = comando.ExecuteNonQuery();
+                if (filasAfectadas > 0)
+                {
+                    MessageBox.Show("Contraseña actualizada correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar la contraseña. Verifique el nombre de usuario.");
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar la contraseña: " + ex.Message);
+                return false;
+            }
+        }
 
 
 

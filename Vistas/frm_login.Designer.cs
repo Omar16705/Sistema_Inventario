@@ -179,6 +179,7 @@
             this.pcOjoOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcOjoOcultar.TabIndex = 9;
             this.pcOjoOcultar.TabStop = false;
+            this.pcOjoOcultar.Click += new System.EventHandler(this.pcOjoOcultar_Click);
             this.pcOjoOcultar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcOjoOcultar_MouseDown);
             this.pcOjoOcultar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pcOjoOcultar_MouseUp);
             // 
