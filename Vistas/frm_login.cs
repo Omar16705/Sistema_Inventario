@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Vistas.Formularios;
+using Vistas.Properties;
 
 namespace Vistas
 {
@@ -21,8 +22,8 @@ namespace Vistas
         {
             InitializeComponent();
             InstanciaLogin = this;
-            this.AcceptButton = btnIngresar ;
-
+            this.AcceptButton = btnIngresar;
+            pcOjoOcultar.Image = Properties.Resources.ojocerrado;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -115,6 +116,28 @@ namespace Vistas
 
 
 
+        }
+
+        private void lklClaveOlvidada_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_restablecer_clave frm_Restablecer = new frm_restablecer_clave();
+            frm_Restablecer.ShowDialog();
+        }
+
+        private void pcOjoOcultar_MouseDown(object sender, MouseEventArgs e)
+        {
+            // 1. Muestra la contraseña
+            txtClave.PasswordChar = '\0';
+            // 2. Cambia la imagen al ojo abierto
+            pcOjoOcultar.Image = Properties.Resources.ojoabierto;
+        }
+
+        private void pcOjoOcultar_MouseUp(object sender, MouseEventArgs e)
+        {
+            // 1. Vuelve a ocultar la contraseña
+            txtClave.PasswordChar = '*';
+            // 2. Vuelve a la imagen del ojo cerrado
+            pcOjoOcultar.Image = Properties.Resources.ojocerrado;
         }
     }
 }

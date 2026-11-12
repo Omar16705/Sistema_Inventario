@@ -24,3 +24,5 @@ C:\Users\omara\Desktop\Sistema_Inventario\Vistas\bin\Debug\System.Memory.xml
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.frm_login.resources
+C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_restablecer_clave.resources
+C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_buscar_datos.resources

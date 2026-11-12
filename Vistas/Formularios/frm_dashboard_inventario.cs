@@ -70,5 +70,15 @@ namespace Vistas.Formularios
 
             }
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new frm_buscar_datos());
+        }
+
+        private void btnGenerarReportes_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new frm_generar_reportes());
+        }
     }
 }

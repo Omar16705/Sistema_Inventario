@@ -39,9 +39,10 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.lblClave = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
-            this.btnVerClave = new System.Windows.Forms.Button();
+            this.pcOjoOcultar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcOjoOcultar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,7 +54,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(235, 386);
+            this.panel1.Size = new System.Drawing.Size(235, 383);
             this.panel1.TabIndex = 0;
             // 
             // lklClaveOlvidada
@@ -69,6 +70,7 @@
             this.lklClaveOlvidada.TabIndex = 2;
             this.lklClaveOlvidada.TabStop = true;
             this.lklClaveOlvidada.Text = "¿Olvidaste tu Contraseña?";
+            this.lklClaveOlvidada.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklClaveOlvidada_LinkClicked);
             // 
             // ptbLogo
             // 
@@ -169,22 +171,24 @@
             this.lblBienvenido.Text = "Bienvenido de nuevo!";
             this.lblBienvenido.Click += new System.EventHandler(this.lblBienvenido_Click);
             // 
-            // btnVerClave
+            // pcOjoOcultar
             // 
-            this.btnVerClave.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnVerClave.Location = new System.Drawing.Point(625, 203);
-            this.btnVerClave.Name = "btnVerClave";
-            this.btnVerClave.Size = new System.Drawing.Size(55, 45);
-            this.btnVerClave.TabIndex = 8;
-            this.btnVerClave.UseVisualStyleBackColor = true;
+            this.pcOjoOcultar.Location = new System.Drawing.Point(615, 214);
+            this.pcOjoOcultar.Name = "pcOjoOcultar";
+            this.pcOjoOcultar.Size = new System.Drawing.Size(54, 30);
+            this.pcOjoOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcOjoOcultar.TabIndex = 9;
+            this.pcOjoOcultar.TabStop = false;
+            this.pcOjoOcultar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcOjoOcultar_MouseDown);
+            this.pcOjoOcultar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pcOjoOcultar_MouseUp);
             // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(707, 386);
-            this.Controls.Add(this.btnVerClave);
+            this.ClientSize = new System.Drawing.Size(709, 383);
+            this.Controls.Add(this.pcOjoOcultar);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.lblClave);
             this.Controls.Add(this.lblUser);
@@ -201,6 +205,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcOjoOcultar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,8 +222,8 @@
         private System.Windows.Forms.Label lblClave;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblBienvenido;
-        private System.Windows.Forms.Button btnVerClave;
         private System.Windows.Forms.PictureBox ptbLogo;
         private System.Windows.Forms.LinkLabel lklClaveOlvidada;
+        private System.Windows.Forms.PictureBox pcOjoOcultar;
     }
 }
