@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\frm_agregar_producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_agregar_producto.Designer.cs">
+      <DependentUpon>frm_agregar_producto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_buscar_datos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frm_agregar_producto.resx">
+      <DependentUpon>frm_agregar_producto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_buscar_datos.resx">
       <DependentUpon>frm_buscar_datos.cs</DependentUpon>
     </EmbeddedResource>

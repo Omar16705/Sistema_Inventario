@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lklClaveOlvidada = new System.Windows.Forms.LinkLabel();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
@@ -61,12 +62,12 @@
             // 
             this.lklClaveOlvidada.AutoSize = true;
             this.lklClaveOlvidada.BackColor = System.Drawing.Color.Transparent;
-            this.lklClaveOlvidada.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lklClaveOlvidada.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lklClaveOlvidada.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lklClaveOlvidada.LinkColor = System.Drawing.Color.White;
-            this.lklClaveOlvidada.Location = new System.Drawing.Point(12, 315);
+            this.lklClaveOlvidada.Location = new System.Drawing.Point(23, 312);
             this.lklClaveOlvidada.Name = "lklClaveOlvidada";
-            this.lklClaveOlvidada.Size = new System.Drawing.Size(205, 20);
+            this.lklClaveOlvidada.Size = new System.Drawing.Size(182, 17);
             this.lklClaveOlvidada.TabIndex = 2;
             this.lklClaveOlvidada.TabStop = true;
             this.lklClaveOlvidada.Text = "¿Olvidaste tu Contraseña?";
@@ -102,6 +103,7 @@
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(244, 23);
             this.txtClave.TabIndex = 1;
+            this.txtClave.Text = "Qwerty123";
             this.txtClave.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtNombre
@@ -112,6 +114,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(244, 23);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.Text = "Admin_Comedor";
             // 
             // btnIngresar
             // 
@@ -199,6 +202,7 @@
             this.Controls.Add(this.txtClave);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_login";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

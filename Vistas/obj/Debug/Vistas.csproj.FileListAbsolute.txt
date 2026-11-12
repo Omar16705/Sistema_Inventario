@@ -27,3 +27,4 @@ C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.frm_login.reso
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_restablecer_clave.resources
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_buscar_datos.resources
 C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_generar_reportes.resources
+C:\Users\omara\Desktop\Sistema_Inventario\Vistas\obj\Debug\Vistas.Formularios.frm_agregar_producto.resources

@@ -80,5 +80,10 @@ namespace Vistas.Formularios
         {
             abrirFormulario(new frm_generar_reportes());
         }
+
+        private void btnProductoNuevo_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new frm_agregar_producto());
+        }
     }
 }

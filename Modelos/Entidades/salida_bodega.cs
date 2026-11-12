@@ -37,7 +37,7 @@ namespace Modelos.Entidades
             {
 
                 SqlConnection conexion = conexion_bd.conectar();
-                string consultaQuery = "SELECT * FROM SALIDAS_BODEGA";
+                string consultaQuery = "SELECT * FROM VW_SALIDAS_BODEGA_PRODUCTO";
                 SqlDataAdapter add = new SqlDataAdapter(consultaQuery, conexion);
                 DataTable data = new DataTable();
                 add.Fill(data);
