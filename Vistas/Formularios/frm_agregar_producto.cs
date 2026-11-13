@@ -125,7 +125,7 @@ namespace Vistas.Formularios
         {
             try
             {
-                Productos productos = new Productos();
+                producto productos = new producto();
                 dgvVerProducto.DataSource = productos.mostrarProductos();
             }
             catch (Exception ex)
@@ -138,7 +138,7 @@ namespace Vistas.Formularios
         {
             try
             {
-                Productos productos = new Productos();
+                producto productos = new producto();
                 productos.Nombre_producto = txtNombreProdcto.Text;
                 productos.Descripcion_producto = txtDescripcion.Text;
                 productos.Unidad_medida = txtUMedida.Text;
@@ -157,6 +157,66 @@ namespace Vistas.Formularios
             txtNombreProdcto.Clear();
             txtDescripcion.Clear();
             txtUMedida.Clear();
+        }
+
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                producto producto = new producto();
+                if (dgvVerProducto.SelectedRows.Count > 0)
+                {
+                    int idProducto = Convert.ToInt32(dgvVerProducto.SelectedRows[0].Cells["id_producto"].Value);
+                    producto.Id_producto = idProducto;
+                    // Aquí deberías implementar un método para eliminar el producto de la base de datos
+                    producto.eliminarProducto(idProducto);
+                    MessageBox.Show("Producto eliminado correctamente.");
+                    mostrarProductos();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, seleccione un producto para eliminar.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar producto: " + ex.Message);
+
+            }
+        }
+
+        private void btnActualizarProducto_Click(object sender, EventArgs e)
+        {
+            try { 
+                producto producto = new producto() { 
+                Nombre_producto = txtNombreProdcto.Text,
+                Descripcion_producto = txtDescripcion.Text,
+                Unidad_medida = txtUMedida.Text
+                };
+                producto.Id_producto = Convert.ToInt32(dgvVerProducto.CurrentRow.Cells["ID_PRODUCTO"].Value);
+                if(producto.actualizarProducto(producto))
+                {
+                    MessageBox.Show("Producto actualizado correctamente.");
+                    mostrarProductos();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar el producto.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar producto: " + ex.Message);
+            }
+
+        }
+
+        private void dgvVerProducto_DoubleClick(object sender, EventArgs e)
+        {
+            txtNombreProdcto.Text = dgvVerProducto.CurrentRow.Cells["NOMBRE_PRODUCTO"].Value.ToString();
+            txtDescripcion.Text = dgvVerProducto.CurrentRow.Cells["DESCRIPCION"].Value.ToString();
+            txtUMedida.Text = dgvVerProducto.CurrentRow.Cells["UNIDAD_MEDIDA"].Value.ToString();
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.dgvVerEntrada = new System.Windows.Forms.DataGridView();
             this.pnlDatos = new System.Windows.Forms.Panel();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
             this.btnEliminarEntrada = new System.Windows.Forms.Button();
@@ -37,18 +38,15 @@
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.btnAgregarEntrada = new System.Windows.Forms.Button();
             this.txtCant = new System.Windows.Forms.TextBox();
-            this.txtUnidadMedida = new System.Windows.Forms.TextBox();
             this.txtRefrigeradora = new System.Windows.Forms.TextBox();
             this.txtBodega = new System.Windows.Forms.TextBox();
             this.lblRefrigeradora = new System.Windows.Forms.Label();
             this.lblBodega = new System.Windows.Forms.Label();
             this.lblVencimiento = new System.Windows.Forms.Label();
             this.lblNombreProducto = new System.Windows.Forms.Label();
-            this.lblUMedida = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblFechaEntrada = new System.Windows.Forms.Label();
             this.lblIngresarDatosEntrada = new System.Windows.Forms.Label();
-            this.cmbProducto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVerEntrada)).BeginInit();
             this.pnlDatos.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +61,7 @@
             this.dgvVerEntrada.Size = new System.Drawing.Size(1030, 399);
             this.dgvVerEntrada.TabIndex = 0;
             this.dgvVerEntrada.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVerEntrada_CellContentClick);
+            this.dgvVerEntrada.DoubleClick += new System.EventHandler(this.dgvVerEntrada_DoubleClick);
             // 
             // pnlDatos
             // 
@@ -75,14 +74,12 @@
             this.pnlDatos.Controls.Add(this.btnLimpiarCampos);
             this.pnlDatos.Controls.Add(this.btnAgregarEntrada);
             this.pnlDatos.Controls.Add(this.txtCant);
-            this.pnlDatos.Controls.Add(this.txtUnidadMedida);
             this.pnlDatos.Controls.Add(this.txtRefrigeradora);
             this.pnlDatos.Controls.Add(this.txtBodega);
             this.pnlDatos.Controls.Add(this.lblRefrigeradora);
             this.pnlDatos.Controls.Add(this.lblBodega);
             this.pnlDatos.Controls.Add(this.lblVencimiento);
             this.pnlDatos.Controls.Add(this.lblNombreProducto);
-            this.pnlDatos.Controls.Add(this.lblUMedida);
             this.pnlDatos.Controls.Add(this.lblCantidad);
             this.pnlDatos.Controls.Add(this.lblFechaEntrada);
             this.pnlDatos.Controls.Add(this.lblIngresarDatosEntrada);
@@ -92,6 +89,15 @@
             this.pnlDatos.Size = new System.Drawing.Size(1030, 205);
             this.pnlDatos.TabIndex = 1;
             this.pnlDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDatos_Paint);
+            // 
+            // cmbProducto
+            // 
+            this.cmbProducto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(614, 59);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(188, 25);
+            this.cmbProducto.TabIndex = 21;
             // 
             // dtpVencimiento
             // 
@@ -119,6 +125,7 @@
             this.btnEliminarEntrada.TabIndex = 18;
             this.btnEliminarEntrada.Text = "Eliminar Entrada";
             this.btnEliminarEntrada.UseVisualStyleBackColor = true;
+            this.btnEliminarEntrada.Click += new System.EventHandler(this.btnEliminarEntrada_Click);
             // 
             // btnActualizarEntrada
             // 
@@ -129,6 +136,7 @@
             this.btnActualizarEntrada.TabIndex = 17;
             this.btnActualizarEntrada.Text = "Actualizar Entrada";
             this.btnActualizarEntrada.UseVisualStyleBackColor = true;
+            this.btnActualizarEntrada.Click += new System.EventHandler(this.btnActualizarEntrada_Click);
             // 
             // btnLimpiarCampos
             // 
@@ -139,6 +147,7 @@
             this.btnLimpiarCampos.TabIndex = 16;
             this.btnLimpiarCampos.Text = "Limpiar Campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // btnAgregarEntrada
             // 
@@ -153,30 +162,26 @@
             // 
             // txtCant
             // 
+            this.txtCant.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCant.Location = new System.Drawing.Point(163, 96);
             this.txtCant.Name = "txtCant";
-            this.txtCant.Size = new System.Drawing.Size(259, 20);
+            this.txtCant.Size = new System.Drawing.Size(259, 22);
             this.txtCant.TabIndex = 14;
-            // 
-            // txtUnidadMedida
-            // 
-            this.txtUnidadMedida.Location = new System.Drawing.Point(609, 62);
-            this.txtUnidadMedida.Name = "txtUnidadMedida";
-            this.txtUnidadMedida.Size = new System.Drawing.Size(188, 20);
-            this.txtUnidadMedida.TabIndex = 13;
             // 
             // txtRefrigeradora
             // 
-            this.txtRefrigeradora.Location = new System.Drawing.Point(609, 128);
+            this.txtRefrigeradora.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRefrigeradora.Location = new System.Drawing.Point(614, 93);
             this.txtRefrigeradora.Name = "txtRefrigeradora";
-            this.txtRefrigeradora.Size = new System.Drawing.Size(188, 20);
+            this.txtRefrigeradora.Size = new System.Drawing.Size(188, 22);
             this.txtRefrigeradora.TabIndex = 11;
             // 
             // txtBodega
             // 
+            this.txtBodega.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBodega.Location = new System.Drawing.Point(163, 167);
             this.txtBodega.Name = "txtBodega";
-            this.txtBodega.Size = new System.Drawing.Size(259, 20);
+            this.txtBodega.Size = new System.Drawing.Size(259, 22);
             this.txtBodega.TabIndex = 9;
             // 
             // lblRefrigeradora
@@ -184,7 +189,7 @@
             this.lblRefrigeradora.AutoSize = true;
             this.lblRefrigeradora.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRefrigeradora.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblRefrigeradora.Location = new System.Drawing.Point(440, 128);
+            this.lblRefrigeradora.Location = new System.Drawing.Point(445, 93);
             this.lblRefrigeradora.Name = "lblRefrigeradora";
             this.lblRefrigeradora.Size = new System.Drawing.Size(111, 20);
             this.lblRefrigeradora.TabIndex = 7;
@@ -217,22 +222,11 @@
             this.lblNombreProducto.AutoSize = true;
             this.lblNombreProducto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreProducto.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNombreProducto.Location = new System.Drawing.Point(440, 97);
+            this.lblNombreProducto.Location = new System.Drawing.Point(445, 62);
             this.lblNombreProducto.Name = "lblNombreProducto";
             this.lblNombreProducto.Size = new System.Drawing.Size(167, 20);
             this.lblNombreProducto.TabIndex = 4;
             this.lblNombreProducto.Text = "Nombre del Producto";
-            // 
-            // lblUMedida
-            // 
-            this.lblUMedida.AutoSize = true;
-            this.lblUMedida.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUMedida.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblUMedida.Location = new System.Drawing.Point(440, 60);
-            this.lblUMedida.Name = "lblUMedida";
-            this.lblUMedida.Size = new System.Drawing.Size(148, 20);
-            this.lblUMedida.TabIndex = 3;
-            this.lblUMedida.Text = "Unidad de Medida";
             // 
             // lblCantidad
             // 
@@ -267,15 +261,6 @@
             this.lblIngresarDatosEntrada.TabIndex = 0;
             this.lblIngresarDatosEntrada.Text = "Entrada de Bodega";
             // 
-            // cmbProducto
-            // 
-            this.cmbProducto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Location = new System.Drawing.Point(609, 94);
-            this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(188, 25);
-            this.cmbProducto.TabIndex = 21;
-            // 
             // frm_entrada_bodega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,7 +285,6 @@
         private System.Windows.Forms.Label lblBodega;
         private System.Windows.Forms.Label lblVencimiento;
         private System.Windows.Forms.Label lblNombreProducto;
-        private System.Windows.Forms.Label lblUMedida;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblFechaEntrada;
         private System.Windows.Forms.Label lblIngresarDatosEntrada;
@@ -308,7 +292,6 @@
         private System.Windows.Forms.Label lblRefrigeradora;
         private System.Windows.Forms.Button btnAgregarEntrada;
         private System.Windows.Forms.TextBox txtCant;
-        private System.Windows.Forms.TextBox txtUnidadMedida;
         private System.Windows.Forms.TextBox txtRefrigeradora;
         private System.Windows.Forms.Button btnEliminarEntrada;
         private System.Windows.Forms.Button btnActualizarEntrada;

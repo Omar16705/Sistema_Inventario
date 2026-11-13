@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Modelos.Entidades
 {
-    public class Productos
+    public class producto
     {
 
         private int id_producto;
@@ -43,7 +43,7 @@ namespace Modelos.Entidades
             }
         }
 
-        public bool insertarProducto(Productos producto)
+        public bool insertarProducto(producto producto)
         {
             try
             {
@@ -98,6 +98,50 @@ namespace Modelos.Entidades
 
 
         }
-
+        
+        public bool actualizarProducto(producto producto)
+        {
+            try
+            {
+                using (SqlConnection conexion = conexion_bd.conectar())
+                {
+                    conexion.Open();
+                    string query = "UPDATE producto SET nombre_producto = @nombre_producto, descripcion = @descripcion_producto, unidad_medida = @unidad_medida WHERE id_producto = @id_producto";
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@nombre_producto", producto.Nombre_producto);
+                        cmd.Parameters.AddWithValue("@descripcion_producto", producto.Descripcion_producto);
+                        cmd.Parameters.AddWithValue("@unidad_medida", producto.Unidad_medida);
+                        cmd.Parameters.AddWithValue("@id_producto", producto.Id_producto);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al actualizar producto: " + ex.Message);
+            }
         }
+
+        public bool eliminarProducto(int id_producto)
+        {
+            try
+            {
+                using (SqlConnection conexion = conexion_bd.conectar())
+                {
+                    conexion.Open();
+                    string query = "DELETE FROM producto WHERE id_producto = @id_producto";
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@id_producto", id_producto);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al eliminar producto: " + ex.Message);
+            }
+        }
+    }
 }

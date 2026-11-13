@@ -101,5 +101,63 @@ namespace Modelos.Entidades
             }
         }
 
+        public bool eliminarEntrada(int id)
+        {
+            try
+            {
+                using (SqlConnection conexion = conexion_bd.conectar())
+                {
+                    conexion.Open();
+                    string query = "DELETE FROM entradas_bodega WHERE id_entrada = @id";
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@id", id);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al eliminar la entrada: " + ex.Message);
+                return false;
+            }
+        } 
+
+        public bool actualizarEntrada(int entrada)
+        {
+            try
+            {
+                using (SqlConnection conexion = conexion_bd.conectar())
+                {
+                    conexion.Open();
+                    string query = @"UPDATE entradas_bodega 
+                                    SET cantidad = @cantidad, 
+                                        fecha_entrada = @fecha_entrada, 
+                                        fecha_vencimiento = @fecha_vencimiento, 
+                                        bodega = @bodega, 
+                                        estante_refri = @estante_refri, 
+                                        id_producto = @id_producto, 
+                                        id_usuario = @id_usuario 
+                                    WHERE id_entrada = @id_entrada";
+                    using (SqlCommand cmd = new SqlCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("@cantidad", Cantidad);
+                        cmd.Parameters.AddWithValue("@fecha_entrada", Fecha_entrada);
+                        cmd.Parameters.AddWithValue("@fecha_vencimiento", Fecha_vencimiento);
+                        cmd.Parameters.AddWithValue("@bodega", Bodega);
+                        cmd.Parameters.AddWithValue("@estante_refri", Estante_refri);
+                        cmd.Parameters.AddWithValue("@id_producto", Id_producto);
+                        cmd.Parameters.AddWithValue("@id_usuario", Id_usuario);
+                        cmd.Parameters.AddWithValue("@id_entrada", Id_entrada);
+                        return cmd.ExecuteNonQuery() > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar la entrada: " + ex.Message);
+                return false;
+            }
+        }
     }
 }

@@ -176,7 +176,7 @@ namespace Vistas.Formularios
         {
             try
             {
-                Modelos.Entidades.Productos objProducto = new Modelos.Entidades.Productos();
+                Modelos.Entidades.producto objProducto = new Modelos.Entidades.producto();
                 DataTable dtProductos = objProducto.mostrarProductos();
 
                 // 1. Asignamos los datos
@@ -196,10 +196,85 @@ namespace Vistas.Formularios
             {
                 MessageBox.Show("Hubo un error al cargar los productos: " + ex.Message);
             }
-        } 
+        }
 
+        private void btnEliminarEntrada_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entrada_bodega entrada = new entrada_bodega();
+                if (dgvVerEntrada.SelectedRows.Count > 0)   
+                    {
+                    int idEntrada = Convert.ToInt32(dgvVerEntrada.SelectedRows[0].Cells["id_entrada"].Value);
+                    bool eliminado = entrada.eliminarEntrada(idEntrada);
+                    if (eliminado)
+                    {
+                        MessageBox.Show("Entrada eliminada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        verEntrada(); // Actualiza el DataGridView después de eliminar
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar la entrada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, seleccione una entrada para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error al eliminar la entrada: " + ex.Message);
+            }
+        }
 
+        private void dgvVerEntrada_DoubleClick(object sender, EventArgs e)
+        {
+            txtBodega.Text = dgvVerEntrada.CurrentRow.Cells["bodega"].Value.ToString();
+            txtCant.Text = dgvVerEntrada.CurrentRow.Cells["cantidad"].Value.ToString();
+            txtRefrigeradora.Text = dgvVerEntrada.CurrentRow.Cells["estante_refri"].Value.ToString();
+            cmbProducto.SelectedValue = Convert.ToInt32(dgvVerEntrada.CurrentRow.Cells["id_producto"].Value);
+            dtpFechaEntrada.Value = Convert.ToDateTime(dgvVerEntrada.CurrentRow.Cells["fecha_entrada"].Value);
+            dtpVencimiento.Value = Convert.ToDateTime(dgvVerEntrada.CurrentRow.Cells["fecha_vencimiento"].Value);
+        }
 
+        private void btnActualizarEntrada_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entrada_bodega entrada_Bodega = new entrada_bodega
+                {
+                    Id_producto = Convert.ToInt32(cmbProducto.SelectedValue),
+                    Cantidad = Convert.ToInt32(txtCant.Text),
+                    Fecha_vencimiento = dtpVencimiento.Value,
+                    Fecha_entrada = dtpFechaEntrada.Value,
+                    Bodega = txtBodega.Text.Trim(),
+                    Estante_refri = txtRefrigeradora.Text.Trim(),
+                    Id_usuario = 1 // Aquí deberías asignar el ID del usuario actual, si lo tienes disponible
+                };
+               int actualizar = entrada_Bodega.Id_entrada = Convert.ToInt32(dgvVerEntrada.CurrentRow.Cells["ID_ENTRADA"].Value); // Asegúrate de tener el ID de la entrada seleccionada
+                if (entrada_Bodega.actualizarEntrada(actualizar) == true)
+                {
+                    MessageBox.Show("Entrada actualizada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    verEntrada(); // Actualiza el DataGridView después de actualizar
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar la entrada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error al actualizar la entrada: " + ex.Message);
+            }
+        }
 
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            txtBodega.Clear();
+            txtCant.Clear();
+            txtRefrigeradora.Clear();
+            cmbProducto.SelectedItem = null;
+        }
     }
 }
