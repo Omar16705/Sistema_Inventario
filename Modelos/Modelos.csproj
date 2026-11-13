@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="BD\conexion_bd.cs" />
     <Compile Include="Entidades\entrada_bodega.cs" />
+    <Compile Include="Entidades\entrada_salida.cs" />
     <Compile Include="Entidades\producto.cs" />
     <Compile Include="Entidades\salida_bodega.cs" />
     <Compile Include="Entidades\Usuario.cs" />

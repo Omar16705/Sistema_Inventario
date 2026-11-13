@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelos.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +17,12 @@ namespace Vistas.Formularios
         {
             InitializeComponent();
         }
-
+        private readonly entrada_salida _datos = new entrada_salida();
         private void frm_buscar_datos_Load(object sender, EventArgs e)
         {
             ConfigurarDataGridView();
+            DarFormatoColumnas();
+            CargarDatos();
         }
 
         private void ConfigurarDataGridView()
@@ -63,5 +66,71 @@ namespace Vistas.Formularios
             dgvBuscar.RowHeadersVisible = false;
         }
 
+        private void DarFormatoColumnas()
+        {
+            if (dgvBuscar.Columns.Count == 0) return;
+            // Ocultar IDs que el usuario no necesita ver
+            if (dgvBuscar.Columns.Contains("IdMovimiento")) dgvBuscar.Columns["IdMovimiento"].Visible = false;
+            if (dgvBuscar.Columns.Contains("IdEntrada")) dgvBuscar.Columns["IdEntrada"].Visible = false;
+            if (dgvBuscar.Columns.Contains("IdSalida")) dgvBuscar.Columns["IdSalida"].Visible = false;
+            if (dgvBuscar.Columns.Contains("IdProducto")) dgvBuscar.Columns["IdProducto"].Visible = false;
+            // Encabezados amigables
+            dgvBuscar.Columns["CodigoMovimiento"].HeaderText = "Código";
+            dgvBuscar.Columns["TipoMovimiento"].HeaderText = "Tipo";
+            dgvBuscar.Columns["FechaMovimiento"].HeaderText = "Fecha Registro";
+            dgvBuscar.Columns["NombreProducto"].HeaderText = "Producto";
+            dgvBuscar.Columns["UnidadMedida"].HeaderText = "Unidad";
+            dgvBuscar.Columns["Cantidad"].HeaderText = "Cant.";
+            dgvBuscar.Columns["FechaVencimiento"].HeaderText = "Vencimiento";
+            dgvBuscar.Columns["Bodega"].HeaderText = "Bodega";
+            dgvBuscar.Columns["EstanteRefri"].HeaderText = "Estante / Refri";
+            dgvBuscar.Columns["Uso"].HeaderText = "Uso / Destino";
+            // Formato visual de fechas
+                dgvBuscar.Columns["FechaMovimiento"].DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
+            dgvBuscar.Columns["FechaVencimiento"].DefaultCellStyle.Format = "dd/MM/yyyy";
+        }
+
+        private void CargarDatos(string filtro = "")
+        {
+            try
+            {
+                List<EntidadMovimientoBodega> movimientos = _datos.ListarMovimientos(filtro);
+
+                // Asignar lista a la propiedad DataSource del DataGridView
+                dgvBuscar.DataSource = null;
+                dgvBuscar.DataSource = movimientos;
+                DarFormatoColumnas();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar movimientos: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            CargarDatos(txtBuscar.Text.Trim());
+        }
+
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                btnBuscar.PerformClick();
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBuscar.Clear();
+            CargarDatos();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
